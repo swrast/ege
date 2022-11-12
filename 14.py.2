@@ -1,0 +1,14 @@
+num = (9**22)+(3**66)-18
+power = 3
+
+c = 0
+
+while num > power:
+    num, o = divmod(num, power)
+
+    if o == 2:
+        c += 1
+if num == 2:
+    c += 1
+
+print(c)
